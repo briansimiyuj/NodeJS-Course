@@ -1,11 +1,7 @@
-Computers don't understand JavaScript.
+When we run JavaScript in the browser,the global object is called window.
 
-Therefore, there a JavaScript engine that converts JavaScript into a language that the computer can understand (machine code).
+But in Node.js, the global object is called global.
 
-Node JS is written in C++ but it allows us to write JavaScript on the server side.
-The JavaScript engine that converts JavaScript into machine code is called V8
-V8 is written in C++
-JavaScript code is passsed to the V8 engine which converts it into machine code.
-V8 is what makes JavaScript run on the server.
+Some of methods and properties are in window object are in global object, like setTimeout, clearTimeout, setInterval, clearInterval, etc.
 
-video #3
+video #4
