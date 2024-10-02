@@ -1,10 +1,8 @@
-function sayHi(){
+function callFunction(func){
 
-    console.log('hi')
-      
+    func()
+
 }
-
-sayHi()
 
 
 const sayBye = function(){
@@ -13,4 +11,4 @@ const sayBye = function(){
 
 }
 
-sayBye()
+callFunction(sayBye)
