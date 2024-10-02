@@ -1,0 +1,13 @@
+Node JS is a platform that allows us to run JavaScript on the server.
+It can read, write, update, delete and create files on the server.
+It can also communicate with databases.
+
+WHY NODE JS?
+
+    1. It uses JavaScript, which is the most popular programming language in the world.
+    2. It is very fast and efficient. It runs on the V8 engine, which is the same engine that powers Google Chrome.
+    3. It uses non-blocking code, which means that it can handle multiple requests at the same time.
+    4. It has huge ecosystem of open source packages (NPM).
+    5. It is suitable for real-time applications like chat applications, online games, etc.
+
+video #1
