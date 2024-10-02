@@ -1,11 +1,9 @@
-To install Node JS:
+Let's create a file called script.js and write some code in it.
 
-    1. Download the installer from https://nodejs.org/en/download/
-    2. Run the installer
-    3. Restart your computer
+To run the file, we run the following command:
 
-To check if Node JS is installed, run the following command in your terminal:
+    `node ${fileName}.js` or `node ${fileName}`
 
-    `node -v`
+NB: You need to be in the directory where the file is located.
 
 video #2
