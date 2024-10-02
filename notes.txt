@@ -4,4 +4,7 @@ But in Node.js, the global object is called global.
 
 Some of methods and properties are in window object are in global object, like setTimeout, clearTimeout, setInterval, clearInterval, etc.
 
+To check the directory we are in, we can use the __dirname property.
+To check the file name we are in, we can use the __filename property.
+
 video #4
