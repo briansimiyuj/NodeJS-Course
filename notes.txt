@@ -1,9 +1,11 @@
-Let's create a file called script.js and write some code in it.
+Computers don't understand JavaScript.
 
-To run the file, we run the following command:
+Therefore, there a JavaScript engine that converts JavaScript into a language that the computer can understand (machine code).
 
-    `node ${fileName}.js` or `node ${fileName}`
+Node JS is written in C++ but it allows us to write JavaScript on the server side.
+The JavaScript engine that converts JavaScript into machine code is called V8
+V8 is written in C++
+JavaScript code is passsed to the V8 engine which converts it into machine code.
+V8 is what makes JavaScript run on the server.
 
-NB: You need to be in the directory where the file is located.
-
-video #2
+video #3
