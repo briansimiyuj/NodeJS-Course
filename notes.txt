@@ -1,1 +1,5 @@
-video #5
+In Node JS, we don't write all our code in one file. We write it in multiple files, each file containing a specific functionality. These files are called modules. We call these modules whenever we want to use a specific functionality.
+
+Let's create a new file called count.js and create a function called count.
+
+video #6
