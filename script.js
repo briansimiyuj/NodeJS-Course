@@ -1,11 +1,35 @@
 import EventEmitter from "events"
+import util from "util"
 
-const myEmitter = new EventEmitter()
+class Person{
 
-myEmitter.on("someEvent", (message) =>{
+    constructor(name){
 
-   console.log(message)
+        this.name = name
+
+    }
+
+}
+
+util.inherits(Person, EventEmitter)
+
+
+const ben = new Person('Ben Franklin'),
+      tom = new Person('Tom Hanks'),
+      mary = new Person('Mary Poppins'),
+
+      people = [ben, tom, mary]
+
+people.forEach(person =>{
+
+    person.on("speak", (message) =>{
+
+        console.log(person.name + ' said: ' + message)
+
+    })
 
 })
 
-myEmitter.emit("someEvent", "The event was emitted")   
+ben.emit("speak", 'Hello, I am Ben Franklin')
+tom.emit("speak", 'Hello, I am Tom Hanks')
+mary.emit("speak", 'Hello, I am Mary Poppins')
