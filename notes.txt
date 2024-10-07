@@ -1,15 +1,5 @@
-In Node JS, we don't write all our code in one file. We write it in multiple files, each file containing a specific functionality. These files are called modules. We call these modules whenever we want to use a specific functionality.
+If we want export multiple parts of the same file, we add the name `export` to each variable and function we want to export.
 
-Let's create a new file called count.js and create a function called count.
+Then we can import them using the same syntax as before. Only this time we separate the parts with a comma. `import { functionName, variableName } from './${filePath}'`
 
-If we want to use this function in another file, we need to export it from the count.js. We do this by adding the `export` keyword before the function. 
-
-Then in the file where we want to use the function, we need to import it using the `import { functionName } from ${"filePath"}` syntax.
-
-Before that, we need to tell Node JS that we want to use ES6 syntax. We need to create a file called package.json in the root directory of our project. This file will contain information about our project. We can create this file by running the command `npm init -y`.
-
-Add the following code to the package.json file:
-
-    `"type": "module"`
-
-video #6
+video #7
