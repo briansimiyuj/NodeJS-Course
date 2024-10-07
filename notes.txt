@@ -9,4 +9,11 @@ We can also write to a file:
 
     1. We use writeFileSync() method. It takes two arguments: file path and data to write. writeFileSync("${filePath}", "${data}")
 
+We also have asynchronous versions of these methods:
+
+    1. readFile 
+    2. writeFile
+
+Both methods takes three arguments: file path, data to write, and a callback function to execute after the file has been read or written.
+
 video #9
