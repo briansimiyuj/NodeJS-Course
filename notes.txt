@@ -3,6 +3,10 @@ In Node JS, we can read files using fs
 Let's create a file called README.md and add some text
 
     1. We need to import fs from fs.
-    2. Then use readFileSync() method on it. It takes takes two arguments: file path and character encoding. readFileSync("${filePath}", "${encoding}"). readFileSync is synchronous; means it will wait for the file to be read before moving on to the next code.
+    2. Then use readFileSync() method on it. It takes takes two arguments: file path and character encoding. readFileSync("${filePath}", "${encoding}"). readFileSync is synchronous; means it will wait for the file to be read before moving on to the next line.
+
+We can also write to a file:
+
+    1. We use writeFileSync() method. It takes two arguments: file path and data to write. writeFileSync("${filePath}", "${data}")
 
 video #9
