@@ -1,18 +1,8 @@
-Event Emitter allows us to create custom events and handle them in our applications.
+In Node JS, we can read files using fs
 
-There are two main steps in using EventEmitter:
+Let's create a file called README.md and add some text
 
-    1. Creating and emitting events 
-    2. Listening to events and performing actions
+    1. We need to import fs from fs.
+    2. Then use readFileSync() method on it. It takes takes two arguments: file path and character encoding. readFileSync("${filePath}", "${encoding}"). readFileSync is synchronous; means it will wait for the file to be read before moving on to the next code.
 
-In this commit, we will create a simple event emitter that emits an event.
-
-    1. Import the EventEmitter class from the events module.
-    2. Create an instance of the EventEmitter class. For example:
-        `const ${eventEmitter} = new EventEmitter().`
-    3. ${eventEmitter} will have on method that takes two arguments:
-        a. The name of the event to listen for.
-        b. A callback function that will be called when the event is emitted.
-    4. To emit an event, use the emit method of the EventEmitter instance and pass the name of the event and any data to be passed to the callback function. 
-
-video #7
+video #9
