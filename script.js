@@ -1,3 +1,11 @@
-import { adder, counter, pi } from "./stuff.js"
+import EventEmitter from "events"
 
-console.log(counter(['Banana', 'Apples', 'Oranges']),  adder(5, 6), pi)
+const myEmitter = new EventEmitter()
+
+myEmitter.on("someEvent", (message) =>{
+
+   console.log(message)
+
+})
+
+myEmitter.emit("someEvent", "The event was emitted")   

@@ -1,5 +1,18 @@
-If we want export multiple parts of the same file, we add the name `export` to each variable and function we want to export.
+Event Emitter allows us to create custom events and handle them in our applications.
 
-Then we can import them using the same syntax as before. Only this time we separate the parts with a comma. `import { functionName, variableName } from './${filePath}'`
+There are two main steps in using EventEmitter:
+
+    1. Creating and emitting events 
+    2. Listening to events and performing actions
+
+In this commit, we will create a simple event emitter that emits an event.
+
+    1. Import the EventEmitter class from the events module.
+    2. Create an instance of the EventEmitter class. For example:
+        `const ${eventEmitter} = new EventEmitter().`
+    3. ${eventEmitter} will have on method that takes two arguments:
+        a. The name of the event to listen for.
+        b. A callback function that will be called when the event is emitted.
+    4. To emit an event, use the emit method of the EventEmitter instance and pass the name of the event and any data to be passed to the callback function. 
 
 video #7
