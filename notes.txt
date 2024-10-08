@@ -1,14 +1,3 @@
-There are 2 ways to create a directory:
-
-    1. Synchronously
-    2. Asynchronously
-
-In this commit, we will learn how to create a directory synchronously.
-
-We use `mkdirSync($directoryName)` method on the fs module 
-
-Before we go to the asynchronous way, let's see how to delete a directory synchronously.
-
-We use `rmSync($directoryName)` method on the fs module, if the directory is empty. But if it's not empty, we use `rmSync($directoryName, {recursive: true})` method on the fs module.
+To create a directory in asynchronous way, we use `mkdir($directoryName, callback function)` method on fs module.
 
 video #10
