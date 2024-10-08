@@ -1,3 +1,10 @@
-To delete a file we use `unlink(${'filePath'}, callback function)` on fs module.
+There are 2 ways to create a directory:
+
+    1. Synchronously
+    2. Asynchronously
+
+In this commit, we will learn how to create a directory synchronously.
+
+We use `mkdirSync($directoryName)` method on the fs module 
 
 video #10
