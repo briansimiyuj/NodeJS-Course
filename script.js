@@ -1,3 +1,3 @@
 import fs from "fs"
 
-fs.mkdirSync("newFolder")
+fs.rmSync("newFolder", { recursive: true })
