@@ -1,15 +1,13 @@
 import fs from "fs"
 
-const readMe = fs.readFile("README.md", "utf-8", (err, data) =>{
-    
-    fs.writeFile("nodejs.txt", data, err =>{
+fs.unlink("WRITEME.md", err =>{
 
-        if(err){
+    if(err){
 
-            console.log(err)
- 
-        }
+        console.log(err)
 
-    })
+    }
+
+    console.log('File deleted')
 
 })
