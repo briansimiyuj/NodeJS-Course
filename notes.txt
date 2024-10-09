@@ -5,6 +5,18 @@ To create a server:
         a. The method takes a callback function as an argument which takes two arguments: request and response
         b. The request object contains information about the incoming request
         c. The response object contains methods for sending a response for a request
+            i. `writeHead($statusCode, $header)` 
+            ii. `end("$body")`
+
+Headers are key-value pairs that contain additional information about the request or response. It's like the head section in HTML.
+
+Headers contain the following:
+
+    - Content-Type: The type of content in the body of the response (text/html, application/json, etc.)
+    - statusCode: The HTTP status code of the response (200, 404, 500, etc.)
+    - body: The body of the response (text, JSON, etc.)
+
+    3. We use the listen() method to start the server, and pass in the port number, IP address, and a callback function that will be called when the server starts listening for requests. `listen(${port}, ${ip}, ${callback})`
 
 Headers are key-value pairs that contain additional information about the request or response. It's like the head section in HTML.
 
