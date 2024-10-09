@@ -1,3 +1,19 @@
-To delete a directory asynchronously we use the `rm($directory, $context, callback function)` method on fs module.
+Protocols are a set of rules that two sides agree to follow to exchange information over a network.
+Each device on a network can be identified by its IP address.
+If a client wants to connect to a server, it needs to know the server's IP address. Therefore the need of a socket. A socket is a channel that allows the client and server to communicate with each other.
 
-video #10
+There are various protocols that can be used to communicate over a network:
+
+    1. File Transfer Protocol (FTP) for transferring files
+    2. Simple Mail Transfer Protocol (SMTP) for sending email
+    3. Hypertext Transfer Protocol (HTTP) for transferring web pages
+    4. Transmission Control Protocol (TCP) for reliable data transfer
+    5. and many more
+
+Information is sent through the socket via TCP. TCP splits the information into smaller chunks called packets.
+
+A port number is a number that listens for a particular request on a server.
+The structure of a port number is: ${protocol}://${hostname}:${port}
+${hostname} can be an IP address, domain name, or localhost.
+
+video #11
