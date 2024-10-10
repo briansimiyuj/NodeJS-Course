@@ -1,5 +1,14 @@
-There are 3 types of streams in Node.js:
+To read a stream:
 
-    1. Readable streams - allow us to read data from a source. When we receive a request from a client, we receive a readable stream.
-    2. Writable streams - allow us to write data to a destination. When we send a response to a client, we send a writable stream.
-    3. Duplex streams - allow us to read and write data to a source or destination.
+Let's create a README file and add a number of text to it.
+Let's import http and fs modules.
+
+    1. Create a readable stream using the `createReadStream(${__dirname + "${fileName}"}, {encoding})`method on the fs module and store it in a variable.
+        i. Import __filename and __dirname from the node.js core module.
+        ii. Use the __dirname and __filename to create a path to the file.
+
+    NB: If we don't specify the encoding, the data will be returned as a buffer.
+
+    2. Create a listen event once we receive every stream of data.
+
+video #14
