@@ -1,7 +1,7 @@
 To read a stream:
 
 Let's create a README file and add a number of text to it.
-Let's import http and fs modules.
+Let's import fs modules.
 
     1. Create a readable stream using the `createReadStream(${__dirname + "${fileName}"}, {encoding})`method on the fs module and store it in a variable.
         i. Import __filename and __dirname from the node.js core module.
