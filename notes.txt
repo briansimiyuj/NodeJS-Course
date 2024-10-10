@@ -1,5 +1,5 @@
-A buffer is a temporary storage area that holds a chunk of data while it is being moved from one place to another.
-When the buffer is full, data is passed on and processed.
-A stream is a sequence of data that is moving from one place to another.
+There are 3 types of streams in Node.js:
 
-video #13
+    1. Readable streams - allow us to read data from a source. When we receive a request from a client, we receive a readable stream.
+    2. Writable streams - allow us to write data to a destination. When we send a response to a client, we send a writable stream.
+    3. Duplex streams - allow us to read and write data to a source or destination.
