@@ -11,9 +11,9 @@ const server = http.createServer((request, response) =>{
 
     console.log('Request was made:' + request.url)
 
-    response.writeHead(200, {"Content-Type": "text/plain"}) 
+    response.writeHead(200, {"Content-Type": "text/html"}) 
 
-    const myReadStream = fs.createReadStream(__dirname + "/README.txt", "utf8")
+    const myReadStream = fs.createReadStream(__dirname + "/index.html", "utf8")
 
     myReadStream.pipe(response)
 

@@ -1,6 +1,7 @@
-Piping is a faster way to write and read streams
-We use pipe(${writableStream}) method on readable stream to write to a writable stream
-This will create a new file and write to it the data we read.
-Now let's pipe the data to a response object in our server. So that we can send the data to the client. (Response object is a writable stream).
+Now let's see how we can serve HTML files using writable streams.
 
-video #16
+Create index.html file and add some markup to it.
+
+Then do as we did in the previous commit but this time, we are serving the index.html file.
+
+video #17
