@@ -1,14 +1,6 @@
-To read a stream:
+To write a stream is very similar to reading a stream. We use `createWriteStream(${__dirname + "${fileName}"})` method on the fs module, which we will assign to a variable (myWriteStream).
+Now we want to write a stream every time we read a stream.
+We will use write(${data}) method on myWriteStream.
+This will create a new file and write to the data that we read.
 
-Let's create a README file and add a number of text to it.
-Let's import fs modules.
-
-    1. Create a readable stream using the `createReadStream(${__dirname + "${fileName}"}, {encoding})`method on the fs module and store it in a variable.
-        i. Import __filename and __dirname from the node.js core module.
-        ii. Use the __dirname and __filename to create a path to the file.
-
-    NB: If we don't specify the encoding, the data will be returned as a buffer.
-
-    2. Create a listen event once we receive every stream of data.
-
-video #14
+video #15
