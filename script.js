@@ -6,12 +6,6 @@ const __filename = fileURLToPath(import.meta.url),
       __dirname = dirname(__filename)
 
 const myReadStream = fs.createReadStream(__dirname + "/README.txt", "utf8"),
-      myWriteStream = fs.createWriteStream(__dirname + "/writeMe.txt")
+      myWriteStream = fs.createWriteStream(__dirname + "/output.txt")
 
-myReadStream.on("data", (chunk) =>{
-
-    console.log('new chunk received:')
-
-    myWriteStream.write(chunk)
-
-})
+myReadStream.pipe(myWriteStream)
