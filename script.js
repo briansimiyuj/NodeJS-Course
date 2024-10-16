@@ -1,21 +1,16 @@
 import fs from "fs"
 import http from "http"
-import { fileURLToPath } from "url"
-import { dirname } from "path"
-
-const __filename = fileURLToPath(import.meta.url),
-      __dirname = dirname(__filename)
 
 
 const server = http.createServer((request, response) =>{
 
     console.log('Request was made:' + request.url)
 
-    response.writeHead(200, {"Content-Type": "text/html"}) 
+    response.writeHead(200, {"Content-Type": "application/json"}) 
 
-    const myReadStream = fs.createReadStream(__dirname + "/index.html", "utf8")
+    const myObj = { name: 'Rolf', job: 'Instructor', age: 25 }
 
-    myReadStream.pipe(response)
+    response.end(JSON.stringify(myObj))
 
 })
 

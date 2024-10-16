@@ -1,7 +1,6 @@
-Now let's see how we can serve HTML files using writable streams.
+Let's see how to serve JSON data 
 
-Create index.html file and add some markup to it.
+To send an object to the response object, we first need to convert it to a string. `end()` method expects a string or a buffer, therefore, we need to convert the object to a string in JSON format. 
+We do this using the `JSON.stringify($object)` method which takes an object as an argument and returns a string in JSON format.
 
-Then do as we did in the previous commit but this time, we are serving the index.html file.
-
-video #17
+video #18
