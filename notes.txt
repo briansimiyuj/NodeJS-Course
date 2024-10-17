@@ -4,4 +4,7 @@ The request object has a pathname property that contains the path of the URL. We
 For example, if the pathname is "/" or "/home", we can render the home page.
 If we try to request a different URL, the browser will keep loading the page until it times out.
 
+We need to provide an an error page when the user requests a page that does not exist.
+Usually, the server will return a 404 status code and if the page is not found, thus we need to create a 404.html page.
+
 video #19
