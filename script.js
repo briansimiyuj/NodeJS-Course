@@ -1,13 +1,22 @@
 import http from "http"
+import fs from "fs"
+import { fileURLToPath } from "url"
+import { dirname } from "path"
 
+const __fileName = fileURLToPath(import.meta.url),
+      __dirName = dirname(__fileName)
 
 const server = http.createServer((request, response) =>{
 
     console.log('Request was made:' + request.url)
-
-    response.writeHead(200, {"Content-Type": "text/plain"}) 
     
-    response.end('Brian is a multi-dollar billionaire')
+    if(request.url === "/" || request.url === "/home"){
+
+        response.writeHead(200, {"Content-Type": "text/html"})
+
+        fs.createReadStream(__dirName + "/index.html").pipe(response)
+
+    }
 
 })
 
