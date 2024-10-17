@@ -22,7 +22,21 @@ const server = http.createServer((request, response) =>{
 
         fs.createReadStream(__dirName + "/about.html").pipe(response)
 
-    }
+    }else if(request.url === "/api/users"){
+
+        const users =[
+
+            { name: 'Brian', age: 29 },
+            { name: 'Mum', age: 55 },
+            { name: 'Mike', age: 22 }
+
+        ]
+
+        response.writeHead(200, {"Content-Type": "application/json"})
+
+        response.end(JSON.stringify(users))
+
+    }    
 
 })
 
