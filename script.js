@@ -36,7 +36,13 @@ const server = http.createServer((request, response) =>{
 
         response.end(JSON.stringify(users))
 
-    }    
+    }else{
+
+        response.writeHead(404, {"Content-Type": "text/html"})
+
+        fs.createReadStream(__dirName + "/404.html").pipe(response)
+
+    }
 
 })
 
