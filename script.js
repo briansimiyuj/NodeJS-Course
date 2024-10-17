@@ -1,4 +1,3 @@
-import fs from "fs"
 import http from "http"
 
 
@@ -6,11 +5,9 @@ const server = http.createServer((request, response) =>{
 
     console.log('Request was made:' + request.url)
 
-    response.writeHead(200, {"Content-Type": "application/json"}) 
-
-    const myObj = { name: 'Rolf', job: 'Instructor', age: 25 }
-
-    response.end(JSON.stringify(myObj))
+    response.writeHead(200, {"Content-Type": "text/plain"}) 
+    
+    response.end('Brian is a multi-dollar billionaire')
 
 })
 
