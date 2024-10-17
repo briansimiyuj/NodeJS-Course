@@ -16,6 +16,12 @@ const server = http.createServer((request, response) =>{
 
         fs.createReadStream(__dirName + "/index.html").pipe(response)
 
+    }else if(request.url === "/about"){
+
+        response.writeHead(200, {"Content-Type": "text/html"})
+
+        fs.createReadStream(__dirName + "/about.html").pipe(response)
+
     }
 
 })
