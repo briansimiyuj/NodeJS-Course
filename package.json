@@ -1,8 +1,8 @@
 {
   "name": "nodejs-course",
   "version": "1.0.0",
-  "description": "",
-  "main": "count.js",
+  "description": "Online course for Node JS",
+  "main": "script.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/briansimiyuj/NodeJS-Course.git"
   },
-  "keywords": [],
+  "keywords": [
+    "fun",
+    "ninjas"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
