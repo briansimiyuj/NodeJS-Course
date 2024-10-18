@@ -2,4 +2,12 @@ Node Package Manager (NPM) is a bunch of JavaScript files that are used to insta
 A package is a collection of JavaScript files that are used to perform a specific task.
 NPM comes installed with Node.js.
 
+To install a package, we use:
+
+    `npm install ${package-name}` or `npm i ${package-name}`
+
+In this case, let's install express package: `npm i express`.
+Once the package is installed, node_modules directory will be created in the project directory. This is where all the packages are stored.
+Packages are dependant on each other. That's why once we install a package, it will automatically install all the packages that the package is dependant on.
+
 video #20

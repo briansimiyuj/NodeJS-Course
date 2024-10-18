@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/briansimiyuj/NodeJS-Course/issues"
   },
-  "homepage": "https://github.com/briansimiyuj/NodeJS-Course#readme"
+  "homepage": "https://github.com/briansimiyuj/NodeJS-Course#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
 }
