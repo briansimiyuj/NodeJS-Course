@@ -1,10 +1,5 @@
-The server consistently returns an identical response object structure across all page requests.
-In real world, this would be absurd. Therefore, we need to have different response objects for different pages. This is where routing systems come in.
-The request object has a pathname property that contains the path of the URL. We can use this to determine which page to render.
-For example, if the pathname is "/" or "/home", we can render the home page.
-If we try to request a different URL, the browser will keep loading the page until it times out.
+Node Package Manager (NPM) is a bunch of JavaScript files that are used to install and manage third-party packages through the command line.
+A package is a collection of JavaScript files that are used to perform a specific task.
+NPM comes installed with Node.js.
 
-We need to provide an an error page when the user requests a page that does not exist.
-Usually, the server will return a 404 status code and if the page is not found, thus we need to create a 404.html page.
-
-video #19
+video #20
