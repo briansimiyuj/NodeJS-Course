@@ -1,9 +1,10 @@
-Express is an easy and efficient way to create routes in Node.js.
-It integrates with many templating engines.
-Contains middleware framework.
+To use Express:
 
-To install express, we run:
-
-    `npm i express`
-
+    1. import express
+    2. create an instance of express and assign it to a variable
+    3. listen on a port through the variable
+    4. create a route
+        i. use http methhods on the variable
+        ii. use a callback function 
+        
 video #23
