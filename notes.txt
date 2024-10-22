@@ -1,10 +1,9 @@
-node-dev is a package that allows us to restart NodeJS server every time we make a change to our code.
-To install node-dev, we run:
+Express is an easy and efficient way to create routes in Node.js.
+It integrates with many templating engines.
+Contains middleware framework.
 
-    `npm i -g node-dev` for global installation or `npm i node-dev --save-dev` for local installation
+To install express, we run:
 
-To run our server, we run:
+    `npm i express`
 
-    `node-dev ${fileName}.js`
-   
-video #22
+video #23
