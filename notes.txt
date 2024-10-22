@@ -1,7 +1,10 @@
-package.json is a file that keeps track of all the packages that are installed in a project.
-To create a package.json file, we run `npm init -y` command.
-When we install a dependancy, it gets added to the package.json file. 
-To install a dependancy, we run `npm i ${package-name} --save` command.
-Once the dependancies are listed in the package.json file, we can run `npm i` command to install all the dependancies.
+node-dev is a package that allows us to restart NodeJS server every time we make a change to our code.
+To install node-dev, we run:
 
-video #21
+    `npm i -g node-dev` for global installation or `npm i node-dev --save-dev` for local installation
+
+To run our server, we run:
+
+    `node-dev ${fileName}.js`
+   
+video #22
