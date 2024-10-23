@@ -18,4 +18,11 @@ app.listen(3000, () =>{
 
     })
 
+
+    app.get("/profile/:id", (request, response) =>{
+
+        response.send('This is the profile page for user with id ' + request.params.id)
+
+    })
+
 })

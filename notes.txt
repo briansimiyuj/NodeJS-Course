@@ -1,10 +1,5 @@
-To use Express:
+In order to have dynamic requests, express has route parameters. Which allow us to capture values from the URL and use them in our route handlers. These parameters are specified in the route path using a colon (:) followed by the parameter name.
 
-    1. import express
-    2. create an instance of express and assign it to a variable
-    3. listen on a port through the variable
-    4. create a route
-        i. use http methhods on the variable
-        ii. use a callback function 
-        
-video #23
+For example, if we have a route like this: `/users/:${parameter}` we can access the value of the ${parameter} in our route handler using the req.params object `req.params.${parameter}`.
+
+video #24
