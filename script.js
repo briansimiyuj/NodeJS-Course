@@ -1,6 +1,10 @@
 import express from "express"
+import { fileURLToPath } from "url"
+import { dirname } from "path"
 
-const app = express()
+const app = express(),
+      __fileName = fileURLToPath(import.meta.url),
+      __dirName = dirname(__fileName)
 
 app.listen(3000, () =>{
 
@@ -8,13 +12,13 @@ app.listen(3000, () =>{
    
     app.get("/", (request, response) =>{
 
-        response.send('Hello World')
+        response.sendFile(__dirName + "/index.html")
 
     })
 
     app.get("/about", (request, response) =>{
 
-        response.send('This is the about page')
+        response.sendFile(__dirName + "/about.html")
 
     })
 

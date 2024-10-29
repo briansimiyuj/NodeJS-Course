@@ -1,5 +1,4 @@
-In order to have dynamic requests, express has route parameters. Which allow us to capture values from the URL and use them in our route handlers. These parameters are specified in the route path using a colon (:) followed by the parameter name.
+In the last commit, we sent responses with strings to dynamic routes. Let's now send HTML files.
+To do this, we'll use the sendFile($path) method. $path has two parts: $__currentDirectory and $fileName.
 
-For example, if we have a route like this: `/users/:${parameter}` we can access the value of the ${parameter} in our route handler using the req.params object `req.params.${parameter}`.
-
-video #24
+video #25
