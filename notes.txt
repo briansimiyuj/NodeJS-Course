@@ -15,4 +15,4 @@ If we want to send data to the client, we use response.render("${viewName}", {${
 
 Then on profile.ejs, we use <%= ${data} %> to display the data.
 
-video #25
+video #25 & #26

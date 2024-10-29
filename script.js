@@ -28,7 +28,13 @@ app.listen(3000, () =>{
 
     app.get("/profile/:name", (request, response) =>{
 
-        response.render("profile", { person: request.params.name })
+        const data ={ 
+            age: 29, 
+            job: "Web Developer", 
+            hobbies: ["Coding", "Gaming", "Reading"] 
+        }
+
+        response.render("profile", { person: request.params.name, data })
 
     })
 

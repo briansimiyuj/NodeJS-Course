@@ -17,14 +17,23 @@
             justify-content: center;
         }
 
-        h1{
+        h1, h2{
             font-size: 48px;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
 
-        p{
+        h2{
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+
+        p, li{
             font-size: 16px;
+        }
+
+        ul{
+            margin-top: 2px;
         }
 
         button{
@@ -47,7 +56,35 @@
     
     <h1>Node JS Tutorial by <%= person %></h1>
 
-    <p>This is the best course you will ever find on Node JS</p>
+    <p>
+
+        <strong>Age:</strong>
+
+        <%= data.age %>
+
+    </p>
+
+
+    <p>
+
+        <strong>Job:</strong>
+
+        <%= data.job %>
+
+    </p>
+
+
+    <h2>Hobbies:</h2>
+
+    <ul>
+
+        <% data.hobbies.forEach(hobby => { %>
+
+            <li><%= hobby %></li>
+
+        <% }) %>
+
+    </ul>
 
     <button>
 
