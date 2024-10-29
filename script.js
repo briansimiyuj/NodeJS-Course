@@ -28,7 +28,7 @@ app.listen(3000, () =>{
 
     app.get("/profile/:name", (request, response) =>{
 
-        response.render("profile")
+        response.render("profile", { person: request.params.name })
 
     })
 

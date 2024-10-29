@@ -11,5 +11,8 @@ When we request views, the server will look for the views directory by default.
 Let's create views directory and create a file called profile.ejs. profile.ejs uses HTML markup syntax. Let's copy and paste the code from the index.html file into the profile.ejs file.
 
 To send the profile.ejs file to the client, we use response.render("${viewName}") method.
+If we want to send data to the client, we use response.render("${viewName}", {${data}}) method.
+
+Then on profile.ejs, we use <%= ${data} %> to display the data.
 
 video #25
