@@ -6,6 +6,9 @@ const app = express(),
       __fileName = fileURLToPath(import.meta.url),
       __dirName = dirname(__fileName)
 
+
+app.set("view engine", "ejs")
+
 app.listen(3000, () =>{
 
     console.log('Server is running on port 3000')
@@ -23,9 +26,9 @@ app.listen(3000, () =>{
     })
 
 
-    app.get("/profile/:id", (request, response) =>{
+    app.get("/profile/:name", (request, response) =>{
 
-        response.send('This is the profile page for user with id ' + request.params.id)
+        response.render("profile")
 
     })
 

@@ -4,4 +4,12 @@ To help us with this, we use a templating engine called EJS. To install it, we r
 
     `npm i ejs --save`
 
+We need to tell Express to use EJS as our templating engine. To do this, we use set("view engine", "${templatingEngine}") method. EJS being our ${templatingEngine}.
+
+When we request views, the server will look for the views directory by default.
+
+Let's create views directory and create a file called profile.ejs. profile.ejs uses HTML markup syntax. Let's copy and paste the code from the index.html file into the profile.ejs file.
+
+To send the profile.ejs file to the client, we use response.render("${viewName}") method.
+
 video #25
