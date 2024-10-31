@@ -15,7 +15,7 @@ app.listen(3000, () =>{
    
     app.get("/", (request, response) =>{
 
-        response.sendFile(__dirName + "/index.html")
+        response.render("index")
 
     })
 
