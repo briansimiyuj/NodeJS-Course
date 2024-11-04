@@ -38,4 +38,13 @@ app.listen(3000, () =>{
 
     })
 
+
+    app.get("/contact", (request, response) =>{
+
+        console.log('This is a middleware')
+
+        response.send('Contact page')
+
+    })
+
 })
