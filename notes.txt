@@ -9,4 +9,6 @@ To use a middleware, we apply use() method on the express instance.
 The use() method accepts a route (optional) and a callback function as parameters. The callback function typically takes request, response, and next as its arguments, enabling middleware logic.
 The next() function is a parameter passed to middleware functions and is used to pass control to the next middleware in the request-response cycle.
 
+In order to see the styles, use method can can take a route and `express.static()` method. Which is a built-in middleware function in Express. It is used to serve static files such as images, CSS files, and JavaScript files.
+
 video #28

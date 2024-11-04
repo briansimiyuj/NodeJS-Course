@@ -9,13 +9,7 @@ const app = express(),
 
 app.set("view engine", "ejs")
 
-app.use("/assets", (request, response, next) =>{
-
-    console.log(request.url)
-
-    next()
-
-})
+app.use("/CSS", express.static(__dirName + "/CSS"))
 
 app.listen(3000, () =>{
 
