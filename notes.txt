@@ -3,3 +3,10 @@ When look at the browser, we can see that the styles are not being applied.
 That's where Middleware comes in.
 
 A middleware is code that runs between the request and the response. For example, we have set up a route to the contact parameter and sent a string as a response. Before we send the response, we have a console.log() statement. This is a middleware.
+
+To use a middleware, we apply use() method on the express instance.
+
+The use() method accepts a route (optional) and a callback function as parameters. The callback function typically takes request, response, and next as its arguments, enabling middleware logic.
+The next() function is a parameter passed to middleware functions and is used to pass control to the next middleware in the request-response cycle.
+
+video #28
