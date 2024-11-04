@@ -5,4 +5,9 @@ To include the partial view in the layout, we need to use the following syntax:
 
     `<%- include("${partial_view_path}") %>` (Refer to ./views/profile.ejs ln 57)
 
+Let's change all HTML files into views (EJS files) and store them in the views/pages folder.
+Include the nav partial in all the pages.
+
+Now if we want to change the navbar, we only need to change the partial view and it will be reflected in all the pages.
+
 video #27

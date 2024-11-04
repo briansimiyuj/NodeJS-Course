@@ -21,7 +21,7 @@ app.listen(3000, () =>{
 
     app.get("/about", (request, response) =>{
 
-        response.sendFile(__dirName + "/about.html")
+        response.render("pages/about")
 
     })
 
@@ -34,7 +34,7 @@ app.listen(3000, () =>{
             hobbies: ["Coding", "Gaming", "Reading"] 
         }
 
-        response.render("profile", { person: request.params.name, data })
+        response.render("pages/profile", { person: request.params.name, data })
 
     })
 
