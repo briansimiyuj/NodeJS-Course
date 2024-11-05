@@ -43,9 +43,7 @@ app.listen(3000, () =>{
 
     app.get("/contact", (request, response) =>{
 
-        console.log(request.query)
-
-        response.send('Contact page')
+        response.render("pages/contact", { qs: request.query })
 
     })
 

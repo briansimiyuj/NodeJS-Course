@@ -5,4 +5,6 @@ If there are multiple query parameters, they are separated by '&' characters, fo
 
 In our contact route, let's log out the request query. We can see an object with all the query parameters and their values. 
 
+We can send query parameters to the client as a second argument to the render() method.
+
 video #29
