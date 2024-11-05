@@ -49,4 +49,11 @@ app.listen(3000, () =>{
 
     })
 
+
+    app.use((request, response) =>{
+
+        response.status(404).render("pages/404")
+
+    })
+
 })
