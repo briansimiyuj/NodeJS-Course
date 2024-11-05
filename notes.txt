@@ -1,10 +1,4 @@
-Query parameters (also known as query strings) are key-value pairs that get attached to URLs to pass additional data in HTTP requests. They appear after the '?' character in a URL and help customize or filter the request.
-If there are multiple query parameters, they are separated by '&' characters, for example:
-
-    `https://www.example.com/search?${queryParameter1}=${value1}&${queryParameter2}=${value2}`
-
-In our contact route, let's log out the request query. We can see an object with all the query parameters and their values. 
-
-We can send query parameters to the client as a second argument to the render() method.
+Now we want to prepopulate the input field in our form(contact.ejs) with query parameters.
+We need to add value attribute to the input field and set them to the query parameters.
 
 video #29

@@ -16,15 +16,15 @@
 
         <label for="who">Who do you want to contact?</label>
 
-        <input type="text" name="who" id="who" placeholder="Name" required>
+        <input type="text" name="who" id="who" placeholder="Name" required value="<%= qs.person %>">
 
         <label for="department">Which department?</label>
 
-        <input type="text" name="department" id="department" placeholder="Department" required>
+        <input type="text" name="department" id="department" placeholder="Department" required value="<%= qs.department %>">
 
         <label for="email">Your email</label>
 
-        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="email" name="email" id="email" placeholder="Email" required value="<%= qs.email %>">
 
         <input type="submit" value="Submit">
 
