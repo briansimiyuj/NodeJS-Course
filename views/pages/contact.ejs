@@ -11,14 +11,24 @@
     <%- include("../partials/nav") %>
 
     <h1>Contact Us</h1>
+    
+    <form id="contact-form">
 
-    <p>Contact the IT department for more information</p>
+        <label for="who">Who do you want to contact?</label>
 
-    <p>
+        <input type="text" name="who" id="who" placeholder="Name" required>
 
-        <%= qs.email %>
+        <label for="department">Which department?</label>
 
-    </p>
+        <input type="text" name="department" id="department" placeholder="Department" required>
+
+        <label for="email">Your email</label>
+
+        <input type="email" name="email" id="email" placeholder="Email" required>
+
+        <input type="submit" value="Submit">
+
+    </form>
     
 </body>
 </html>
