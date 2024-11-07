@@ -1,10 +1,12 @@
 import express from "express"
+import bodyParser from "body-parser"
 import { fileURLToPath } from "url"
 import { dirname } from "path"
 
 const app = express(),
       __fileName = fileURLToPath(import.meta.url),
-      __dirName = dirname(__fileName)
+      __dirName = dirname(__fileName),
+      URLencodedParser = bodyParser.urlencoded({ extended: false })
 
 
 app.set("view engine", "ejs")
@@ -44,6 +46,15 @@ app.listen(3000, () =>{
     app.get("/contact", (request, response) =>{
 
         response.render("pages/contact", { qs: request.query })
+
+    })
+
+
+    app.post("/contact", URLencodedParser, (request, response) =>{
+
+        console.log(request.body)
+
+        response.render("pages/contact-success", { data: request.body })
 
     })
 

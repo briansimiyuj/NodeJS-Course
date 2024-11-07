@@ -6,4 +6,14 @@ To install body-parser, we run:
 
     `npm i body-parser`
 
+Then assign the middleware to a variable (URLencodedParser)
+
+When handling the POST request to "/contact", we:
+
+1. Use the URLencodedParser middleware as the second parameter to parse form data
+2. Access the parsed form data through request.body
+3. Pass both query string data (request.query) and form data (request.body) to the view
+
+After successfully submitting the form, we need to create a new view to show the user that their message was sent and render it.
+
 video #30
