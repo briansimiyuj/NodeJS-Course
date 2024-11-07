@@ -1,4 +1,9 @@
-Now we want to prepopulate the input field in our form(contact.ejs) with query parameters.
-We need to add value attribute to the input field and set them to the query parameters.
+A POST request is a method that asks the server to accept/store data which is sent in the HTTP request body. Mostly used to submit forms.
 
-video #29
+In our form, let's add a method attribute and set it to "POST" and an action attribute and set it to "/contact".
+We need to parse the request body and get the data from it. To do that, we need to add a body-parser middleware.
+To install body-parser, we run:
+
+    `npm i body-parser`
+
+video #30
